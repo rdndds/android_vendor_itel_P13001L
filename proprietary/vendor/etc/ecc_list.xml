@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EccTable>
+    <!--
+        Configure emergency numbers for open market load. For the emergey numbers defined in
+        3GPP TS 22.101 (112/911 when SIM/USIM present and 112/911/000/08/110/118/119/999
+        when SIM/USIM not present) it will be configure in default emergency number source,
+        so no need to configure here if there is no special request for these numbers.
+
+        The attribute definition for tag EccEntry:
+        - Ecc: the emergnecy number
+        - Category: the service category (From 3GPP TS24.008)
+            - Bit 1 (1): Police
+            - Bit 2 (2): Ambulance
+            - Bit 3 (4): Fire Brigade
+            - Bit 4 (8): Marine Guard
+            - Bit 5 (16): Mountain Rescue
+            - Bit 6 (32): Manually initiated eCall
+            - Bit 7 (64): Automatically initiated eCall
+            - Bit 8 (128): is spare and set to "0"
+        - Condition: there are following values:
+            - 0: ecc only when no sim
+            - 1: ecc always
+            - 2: MMI will show ecc but send to nw as normal call
+        - Plmn: Operator PLMN which contains MCC+MNC.
+                Use FFF or FF for all operators under same country
+                Ex: 460 FFF means all operators in China
+    -->
+
+    <!-- Add for Greece -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="202 FFF"/>
+    <EccEntry Ecc="100" Category="0" Condition="0" Plmn="202 FFF"/>
+    <EccEntry Ecc="166" Category="0" Condition="0" Plmn="202 FFF"/>
+    <EccEntry Ecc="199" Category="0" Condition="0" Plmn="202 FFF"/>
+
+    <!-- Add for Netherlands -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="204 FFF"/>
+    <EccEntry Ecc="09008844" Category="1" Condition="2" Plmn="204 FFF"/>
+
+    <!-- Add for Belgium -->
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="206 FFF"/>
+    <EccEntry Ecc="100" Category="0" Condition="2" Plmn="206 FFF"/>
+    <EccEntry Ecc="080032123" Category="0" Condition="2" Plmn="206 FFF"/>
+    <EccEntry Ecc="101" Category="0" Condition="2" Plmn="206 FFF"/>
+    <EccEntry Ecc="116000" Category="0" Condition="2" Plmn="206 FFF"/>
+    <EccEntry Ecc="080019400" Category="0" Condition="2" Plmn="206 FFF"/>
+	
+    <!-- Add for France -->
+    <EccEntry Ecc="15" Category="2" Condition="2" Plmn="208 FFF"/>
+    <EccEntry Ecc="17" Category="1" Condition="2" Plmn="208 FFF"/>
+    <EccEntry Ecc="18" Category="3" Condition="2" Plmn="208 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="208 FFF"/>
+
+    <!-- Add for Kosovo -->
+    <EccEntry Ecc="192" Category="1" Condition="0" Plmn="212 FFF"/>
+    <EccEntry Ecc="193" Category="3" Condition="0" Plmn="212 FFF"/>
+    <EccEntry Ecc="194" Category="2" Condition="0" Plmn="212 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="212 FFF"/>
+
+    <!-- Add for Spain -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="214 FFF"/>
+    <EccEntry Ecc="091" Category="1" Condition="2" Plmn="214 FFF"/>
+    <EccEntry Ecc="092" Category="0" Condition="2" Plmn="214 FFF"/>
+    <EccEntry Ecc="061" Category="0" Condition="2" Plmn="214 FFF"/>
+    <EccEntry Ecc="080" Category="3" Condition="2" Plmn="214 FFF"/>
+	
+    <!-- Add for Hungary -->
+    <EccEntry Ecc="104" Category="2" Condition="2" Plmn="216 FFF"/>
+    <EccEntry Ecc="105" Category="3" Condition="2" Plmn="216 FFF"/>
+    <EccEntry Ecc="107" Category="1" Condition="2" Plmn="216 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="216 FFF"/>
+	
+    <!-- Add for Bosnia and Herzegovina -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="218 FFF"/>
+    <EccEntry Ecc="122" Category="1" Condition="2" Plmn="218 FFF"/>
+    <EccEntry Ecc="123" Category="3" Condition="2" Plmn="218 FFF"/>
+    <EccEntry Ecc="124" Category="2" Condition="2" Plmn="218 FFF"/>
+
+    <!-- Add for Croatia -->
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="219 FFF"/>
+    <EccEntry Ecc="192" Category="1" Condition="2" Plmn="219 FFF"/>
+    <EccEntry Ecc="194" Category="3" Condition="2" Plmn="219 FFF"/>
+    <EccEntry Ecc="193" Category="2" Condition="2" Plmn="219 FFF"/>
+    <EccEntry Ecc="195" Category="3" Condition="2" Plmn="219 FFF"/>
+    <EccEntry Ecc="1987" Category="2" Condition="2" Plmn="219 FFF"/>
+	
+    <!-- Add for Serbia -->
+    <EccEntry Ecc="192" Category="0" Condition="0" Plmn="220 FFF"/>
+    <EccEntry Ecc="193" Category="0" Condition="0" Plmn="220 FFF"/>
+    <EccEntry Ecc="194" Category="0" Condition="0" Plmn="220 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="220 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="220 FFF"/>
+
+    <!-- Add for Italy -->
+    <EccEntry Ecc="115" Category="0" Condition="2" Plmn="222 FFF"/>
+    <EccEntry Ecc="113" Category="0" Condition="2" Plmn="222 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="222 FFF"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="222 FFF"/>
+	
+    <!-- Add for Romania -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="226 FFF"/>
+
+    <!-- Add for Czech republic -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="230 FFF"/>
+    <EccEntry Ecc="155" Category="2" Condition="0" Plmn="230 FFF"/>
+    <EccEntry Ecc="158" Category="1" Condition="0" Plmn="230 FFF"/>
+    <EccEntry Ecc="150" Category="3" Condition="0" Plmn="230 FFF"/>
+    <EccEntry Ecc="156" Category="0" Condition="0" Plmn="230 FFF"/>
+
+    <!-- Add for Slovakia -->
+    <EccEntry Ecc="158" Category="1" Condition="0" Plmn="231 FFF"/>
+    <EccEntry Ecc="155" Category="2" Condition="0" Plmn="231 FFF"/>
+    <EccEntry Ecc="150" Category="3" Condition="0" Plmn="231 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="231 FFF"/>
+    <EccEntry Ecc="159" Category="0" Condition="0" Plmn="231 FFF"/>
+	
+    <!-- Add for Austria -->
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="232 FFF"/>
+    <EccEntry Ecc="133" Category="1" Condition="2" Plmn="232 FFF"/>
+    <EccEntry Ecc="122" Category="3" Condition="2" Plmn="232 FFF"/>
+    <EccEntry Ecc="144" Category="2" Condition="2" Plmn="232 FFF"/>
+    <EccEntry Ecc="128" Category="0" Condition="2" Plmn="232 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="232 FFF"/>
+    <EccEntry Ecc="999" Category="0" Condition="0" Plmn="232 FFF"/>
+    <EccEntry Ecc="140" Category="0" Condition="2" Plmn="232 FFF"/>
+	
+    <!-- Add for O2/UK operator -->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="234 10"/>
+
+    <!-- Add for Vodafone/Ireland operators -->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="272 01"/>
+
+    <!-- Add for Lithuania -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="246 FFF"/>
+	
+    <!-- Add for Latvia -->
+    <EccEntry Ecc="112" Category="3" Condition="0" Plmn="247 FFF"/>
+    <EccEntry Ecc="110" Category="1" Condition="2" Plmn="247 FFF"/>
+    <EccEntry Ecc="113" Category="2" Condition="2" Plmn="247 FFF"/>
+
+    <!-- Add for Estonia -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="248 FFF"/>
+	
+    <!-- Add for Russia -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="250 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="250 FFF"/>
+
+    <!-- Add for Ukraine -->
+    <EccEntry Ecc="101" Category="3" Condition="0" Plmn="255 FFF"/>
+    <EccEntry Ecc="102" Category="1" Condition="0" Plmn="255 FFF"/>
+    <EccEntry Ecc="103" Category="2" Condition="0" Plmn="255 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="255 FFF"/>
+
+    <!-- Add for Belarus -->
+    <EccEntry Ecc="101" Category="0" Condition="2" Plmn="257 FFF"/>
+    <EccEntry Ecc="102" Category="1" Condition="2" Plmn="257 FFF"/>
+    <EccEntry Ecc="103" Category="2" Condition="2" Plmn="257 FFF"/>
+    <EccEntry Ecc="104" Category="0" Condition="2" Plmn="257 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="257 FFF"/>
+
+    <!-- Add for Poland -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="260 FFF"/>
+    <EccEntry Ecc="09008844" Category="1" Condition="2" Plmn="260 FFF"/>
+    <EccEntry Ecc="999" Category="2" Condition="2" Plmn="260 FFF"/>
+    <EccEntry Ecc="998" Category="3" Condition="2" Plmn="260 FFF"/>
+    <EccEntry Ecc="997" Category="1" Condition="2" Plmn="260 FFF"/>
+
+    <!-- Add for Germany -->
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="262 FFF"/>
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="262 FFF"/>
+	
+    <!-- Add for Luxembourg -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="270 FFF"/>
+    <EccEntry Ecc="113" Category="0" Condition="2" Plmn="270 FFF"/>
+    <EccEntry Ecc="26000" Category="0" Condition="2" Plmn="270 FFF"/>
+
+    <!-- Add for Albania -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="276 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="276 FFF"/>
+	
+    <!-- Add for Cyprus -->
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="280 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="280 FFF"/>
+    <EccEntry Ecc="199" Category="0" Condition="0" Plmn="280 FFF"/>
+	
+    <!-- Add for Georgia -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="282 FFF"/>
+
+    <!-- Add for Bulgaria -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="284 FFF"/>
+    <EccEntry Ecc="166" Category="1" Condition="2" Plmn="284 FFF"/>
+    <EccEntry Ecc="150" Category="2" Condition="2" Plmn="284 FFF"/>
+    <EccEntry Ecc="160" Category="3" Condition="2" Plmn="284 FFF"/>
+	
+    <!-- Add for Turkey -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="286 FFF"/>
+    <EccEntry Ecc="999" Category="0" Condition="0" Plmn="286 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="286 FFF"/>
+    <EccEntry Ecc="110" Category="0" Condition="0" Plmn="286 FFF"/>
+    <EccEntry Ecc="155" Category="0" Condition="0" Plmn="286 FFF"/>
+
+    <!-- Add for Slovenia -->
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="293 FFF"/>
+    <EccEntry Ecc="0801200" Category="1" Condition="2" Plmn="293 FFF"/>
+    <EccEntry Ecc="113" Category="1" Condition="2" Plmn="293 FFF"/>
+    <EccEntry Ecc="1987" Category="0" Condition="2" Plmn="293 FFF"/>
+    <EccEntry Ecc="0801900" Category="0" Condition="2" Plmn="293 FFF"/>
+    <EccEntry Ecc="1188" Category="0" Condition="2" Plmn="293 FFF"/>
+    <EccEntry Ecc="1180" Category="0" Condition="2" Plmn="293 FFF"/>
+    <EccEntry Ecc="19810" Category="0" Condition="2" Plmn="293 FFF"/>
+    <EccEntry Ecc="090939881" Category="0" Condition="2" Plmn="293 FFF"/>
+	
+    <!-- Add for Montenegro -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="297 FFF"/>
+    <EccEntry Ecc="122" Category="1" Condition="2" Plmn="297 FFF"/>
+    <EccEntry Ecc="123" Category="3" Condition="2" Plmn="297 FFF"/>
+    <EccEntry Ecc="124" Category="2" Condition="2" Plmn="297 FFF"/>
+	
+    <!-- Add for Mexico -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="334 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="334 FFF"/>	
+
+    <!-- Add for Jamaica -->
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="338 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="338 FFF"/>
+    <EccEntry Ecc="119" Category="1" Condition="0" Plmn="338 FFF"/>
+    <EccEntry Ecc="110" Category="0" Condition="0" Plmn="338 FFF"/>
+    <EccEntry Ecc="116" Category="0" Condition="2" Plmn="338 FFF"/>
+
+    <!-- Add for Cuba -->
+    <EccEntry Ecc="103" Category="0" Condition="2" Plmn="368 FFF"/>
+    <EccEntry Ecc="104" Category="0" Condition="2" Plmn="368 FFF"/>
+    <EccEntry Ecc="105" Category="3" Condition="2" Plmn="368 FFF"/>
+    <EccEntry Ecc="106" Category="1" Condition="2" Plmn="368 FFF"/>
+    <EccEntry Ecc="107" Category="0" Condition="2" Plmn="368 FFF"/>
+	
+    <!-- Add for Dominican Republic -->
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="370 FFF"/>
+	
+    <!-- Add for Haiti -->
+    <EccEntry Ecc="115" Category="3" Condition="0" Plmn="372 FFF"/>
+    <EccEntry Ecc="114" Category="1" Condition="0" Plmn="372 FFF"/>
+    <EccEntry Ecc="116" Category="2" Condition="0" Plmn="372 FFF"/>
+
+    <!-- Add for Azerbaijan -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="400 FFF"/>
+    <EccEntry Ecc="101" Category="3" Condition="0" Plmn="400 FFF"/>
+    <EccEntry Ecc="102" Category="1" Condition="0" Plmn="400 FFF"/>
+    <EccEntry Ecc="103" Category="2" Condition="0" Plmn="400 FFF"/>
+    <EccEntry Ecc="104" Category="0" Condition="0" Plmn="400 FFF"/>
+    <EccEntry Ecc="109" Category="0" Condition="0" Plmn="400 FFF"/>
+    <EccEntry Ecc="152" Category="0" Condition="0" Plmn="400 FFF"/>
+    <EccEntry Ecc="161" Category="0" Condition="0" Plmn="400 FFF"/>
+	
+    <!-- Add for Kazakhstan -->
+    <EccEntry Ecc="101" Category="3" Condition="0" Plmn="401 FFF"/>
+    <EccEntry Ecc="102" Category="1" Condition="0" Plmn="401 FFF"/>
+    <EccEntry Ecc="103" Category="2" Condition="0" Plmn="401 FFF"/>
+    <EccEntry Ecc="104" Category="0" Condition="0" Plmn="401 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="401 FFF"/>
+    <EccEntry Ecc="118" Category="0" Condition="0" Plmn="401 FFF"/>
+
+    <!-- Add for Bhutan -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="402 FFF"/>
+    <EccEntry Ecc="2121" Category="0" Condition="2" Plmn="402 FFF"/>
+    <EccEntry Ecc="6060" Category="0" Condition="2" Plmn="402 FFF"/>
+    <EccEntry Ecc="110" Category="0" Condition="0" Plmn="402 FFF"/>
+    <EccEntry Ecc="113" Category="0" Condition="2" Plmn="402 FFF"/>
+    <EccEntry Ecc="1250" Category="0" Condition="2" Plmn="402 FFF"/>
+    <EccEntry Ecc="1098" Category="0" Condition="2" Plmn="402 FFF"/>
+    <EccEntry Ecc="77161215" Category="0" Condition="2" Plmn="402 FFF"/>
+    <EccEntry Ecc="1010" Category="0" Condition="2" Plmn="402 FFF"/>
+    <EccEntry Ecc="1009" Category="0" Condition="2" Plmn="402 FFF"/>
+	
+    <!-- Add for India -->
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="404 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="2" Plmn="404 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="405 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="2" Plmn="405 FFF"/>
+	
+    <!-- Add for Pakistan -->
+    <EccEntry Ecc="15" Category="1" Condition="1" Plmn="410 FFF"/>
+    <EccEntry Ecc="16" Category="3" Condition="1" Plmn="410 FFF"/>
+    <EccEntry Ecc="115" Category="2" Condition="2" Plmn="410 FFF"/>
+    <EccEntry Ecc="1020" Category="0" Condition="2" Plmn="410 FFF"/>
+    <EccEntry Ecc="130" Category="0" Condition="2" Plmn="410 FFF"/>
+    <EccEntry Ecc="1122" Category="0" Condition="2" Plmn="410 FFF"/>
+    <EccEntry Ecc="1717" Category="0" Condition="2" Plmn="410 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="1" Plmn="410 FFF"/>
+
+    <!-- Add for Sri Lanka -->
+    <EccEntry Ecc="119" Category="1" Condition="0" Plmn="413 FFF"/>
+    <EccEntry Ecc="110" Category="0" Condition="0" Plmn="413 FFF"/>
+	
+    <!-- Add for KH2 Myanmar due to AOSP eccdata will treat it as ecc -->
+    <EccEntry Ecc="191" Category="3" Condition="2" Plmn="414 FFF"/>
+    <EccEntry Ecc="192" Category="2" Condition="2" Plmn="414 FFF"/>
+    <EccEntry Ecc="199" Category="1" Condition="2" Plmn="414 FFF"/>
+
+    <!-- Add for Lebanon -->
+    <EccEntry Ecc="911" Category="0" Condition="2" Plmn="415 FFF"/>
+    <EccEntry Ecc="112" Category="1" Condition="2" Plmn="415 FFF"/>
+    <EccEntry Ecc="125" Category="0" Condition="2" Plmn="415 FFF"/>
+	<EccEntry Ecc="140" Category="2" Condition="2" Plmn="415 FFF"/>
+    <EccEntry Ecc="177" Category="0" Condition="2" Plmn="415 FFF"/>
+    <EccEntry Ecc="1717" Category="0" Condition="2" Plmn="415 FFF"/>
+    <EccEntry Ecc="175" Category="3" Condition="2" Plmn="415 FFF"/>
+	
+    <!-- Add for Iraq -->
+    <EccEntry Ecc="191" Category="1" Condition="2" Plmn="416 FFF"/>
+    <EccEntry Ecc="192" Category="1" Condition="2" Plmn="416 FFF"/>
+    <EccEntry Ecc="193" Category="2" Condition="2" Plmn="416 FFF"/>
+	<EccEntry Ecc="190" Category="1" Condition="2" Plmn="416 FFF"/>
+    <EccEntry Ecc="199" Category="0" Condition="2" Plmn="416 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="2" Plmn="416 FFF"/>
+
+    <!-- Add for Syria -->
+    <EccEntry Ecc="112" Category="1" Condition="0" Plmn="417 FFF"/>
+    <EccEntry Ecc="113" Category="1" Condition="2" Plmn="417 FFF"/>
+    <EccEntry Ecc="115" Category="2" Condition="2" Plmn="417 FFF"/>
+	
+    <!-- Add for Iraq -->
+    <EccEntry Ecc="104" Category="1" Condition="2" Plmn="418 FFF"/>
+    <EccEntry Ecc="115" Category="0" Condition="2" Plmn="418 FFF"/>
+    <EccEntry Ecc="122" Category="2" Condition="2" Plmn="418 FFF"/>
+	<EccEntry Ecc="124" Category="1" Condition="2" Plmn="418 FFF"/>
+    <EccEntry Ecc="144" Category="1" Condition="2" Plmn="418 FFF"/>
+    <EccEntry Ecc="130" Category="0" Condition="2" Plmn="418 FFF"/>
+	<EccEntry Ecc="106" Category="0" Condition="2" Plmn="418 FFF"/>
+    <EccEntry Ecc="999" Category="0" Condition="0" Plmn="418 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="418 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="418 FFF"/>
+	
+    <!-- Add for Kuwait -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="419 FFF"/>
+    <EccEntry Ecc="152" Category="0" Condition="2" Plmn="419 FFF"/>
+    <EccEntry Ecc="135" Category="2" Condition="2" Plmn="419 FFF"/>
+	<EccEntry Ecc="139" Category="0" Condition="2" Plmn="419 FFF"/>
+    <EccEntry Ecc="151" Category="0" Condition="2" Plmn="419 FFF"/>
+    <EccEntry Ecc="161" Category="0" Condition="2" Plmn="419 FFF"/>
+	
+    <!-- Add for Saudi Arabia -->
+    <EccEntry Ecc="999" Category="1" Condition="2" Plmn="420 FFF"/>
+    <EccEntry Ecc="933" Category="0" Condition="2" Plmn="420 FFF"/>
+    <EccEntry Ecc="993" Category="1" Condition="2" Plmn="420 FFF"/>
+	<EccEntry Ecc="996" Category="0" Condition="2" Plmn="420 FFF"/>
+    <EccEntry Ecc="997" Category="2" Condition="2" Plmn="420 FFF"/>
+    <EccEntry Ecc="998" Category="3" Condition="2" Plmn="420 FFF"/>
+	<EccEntry Ecc="911" Category="0" Condition="2" Plmn="420 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="420 FFF"/>
+
+    <!-- Add for Yemen -->
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn="421 FFF"/>
+    <EccEntry Ecc="199" Category="1" Condition="2" Plmn="421 FFF"/>
+    <EccEntry Ecc="179" Category="3" Condition="2" Plmn="421 FFF"/>
+    <EccEntry Ecc="195" Category="2" Condition="2" Plmn="421 FFF"/>
+    <EccEntry Ecc="194" Category="0" Condition="2" Plmn="421 FFF"/>
+	
+    <!-- Add for Oman -->
+    <EccEntry Ecc="9999" Category="0" Condition="2" Plmn="422 FFF"/>
+    <EccEntry Ecc="999" Category="0" Condition="0" Plmn="422 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="422 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="422 FFF"/>
+
+    <!-- Add for Bahrain -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="426 FFF"/>
+    <EccEntry Ecc="999" Category="0" Condition="0" Plmn="426 FFF"/>
+    <EccEntry Ecc="998" Category="2" Condition="2" Plmn="426 FFF"/>
+    <EccEntry Ecc="997" Category="3" Condition="2" Plmn="426 FFF"/>
+    <EccEntry Ecc="199" Category="1" Condition="2" Plmn="426 FFF"/>
+    <EccEntry Ecc="992" Category="0" Condition="2" Plmn="426 FFF"/>
+    <EccEntry Ecc="994" Category="0" Condition="2" Plmn="426 FFF"/>
+    <EccEntry Ecc="990" Category="0" Condition="2" Plmn="426 FFF"/>
+	
+    <!-- Add for Qatar -->
+    <EccEntry Ecc="999" Category="0" Condition="0" Plmn="427 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="427 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="427 FFF"/>
+    <EccEntry Ecc="991" Category="0" Condition="2" Plmn="427 FFF"/>
+	
+    <!-- Add for UAE -->
+    <EccEntry Ecc="101" Category="0" Condition="2" Plmn="428 FFF"/>
+    <EccEntry Ecc="102" Category="0" Condition="2" Plmn="428 FFF"/>
+    <EccEntry Ecc="103" Category="0" Condition="2" Plmn="428 FFF"/>
+
+    <!-- Add for Nepal -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="429 FFF"/>
+    <EccEntry Ecc="100" Category="1" Condition="2" Plmn="429 FFF"/>
+    <EccEntry Ecc="101" Category="3" Condition="2" Plmn="429 FFF"/>
+    <EccEntry Ecc="102" Category="2" Condition="2" Plmn="429 FFF"/>
+    <EccEntry Ecc="103" Category="0" Condition="2" Plmn="429 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="2" Plmn="429 FFF"/>
+    <EccEntry Ecc="104" Category="0" Condition="2" Plmn="429 FFF"/>
+	
+    <!-- Add for UAE -->
+    <EccEntry Ecc="998" Category="2" Condition="2" Plmn="424 FFF"/>
+    <EccEntry Ecc="997" Category="3" Condition="2" Plmn="424 FFF"/>
+    <EccEntry Ecc="999" Category="1" Condition="2" Plmn="424 FFF"/>
+
+    <!-- Add for Palestine -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="425 FFF"/>
+	
+    <!-- Add for Israel -->
+    <EccEntry Ecc="100" Category="1" Condition="2" Plmn="425 FFF"/>
+    <EccEntry Ecc="101" Category="2" Condition="2" Plmn="425 FFF"/>
+    <EccEntry Ecc="102" Category="0" Condition="2" Plmn="425 FFF"/>
+	
+    <!-- Add for DB2 -->
+    <EccEntry Ecc="110" Category="1" Condition="2" Plmn="432 FFF"/>
+    <EccEntry Ecc="115" Category="2" Condition="2" Plmn="432 FFF"/>
+    <EccEntry Ecc="125" Category="3" Condition="2" Plmn="432 FFF"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="432 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="432 FFF"/>
+    <EccEntry Ecc="000" Category="0" Condition="0" Plmn="432 FFF"/>
+    <EccEntry Ecc="08" Category="0" Condition="0" Plmn="432 FFF"/>
+    <EccEntry Ecc="119" Category="0" Condition="0" Plmn="432 FFF"/>
+    <EccEntry Ecc="194" Category="0" Condition="2" Plmn="432 FFF"/>
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn="432 FFF"/>
+    <EccEntry Ecc="121" Category="0" Condition="2" Plmn="432 FFF"/>
+    <EccEntry Ecc="124" Category="0" Condition="2" Plmn="432 FFF"/>
+
+    <!-- Add for Uzbekistan -->
+    <EccEntry Ecc="112" Category="1" Condition="0" Plmn="434 FFF"/>
+    <EccEntry Ecc="911" Category="2" Condition="0" Plmn="434 FFF"/>
+	
+    <!-- Add for UAE -->
+    <EccEntry Ecc="101" Category="0" Condition="0" Plmn="436 FFF"/>
+    <EccEntry Ecc="102" Category="0" Condition="0" Plmn="436 FFF"/>
+    <EccEntry Ecc="103" Category="0" Condition="0" Plmn="436 FFF"/>
+
+    <!-- Add for  Kyrgyzstan -->
+    <EccEntry Ecc="101" Category="3" Condition="0" Plmn="437 FFF"/>
+    <EccEntry Ecc="102" Category="1" Condition="0" Plmn="437 FFF"/>
+    <EccEntry Ecc="103" Category="2" Condition="0" Plmn="437 FFF"/>
+    <EccEntry Ecc="104" Category="0" Condition="0" Plmn="437 FFF"/>
+    <EccEntry Ecc="161" Category="0" Condition="0" Plmn="437 FFF"/>
+	
+    <!-- Add for Japan operator due to AOSP don't set correct category -->
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="440 FFF"/>
+    <EccEntry Ecc="118" Category="8" Condition="1" Plmn="440 FFF"/>
+    <EccEntry Ecc="119" Category="6" Condition="1" Plmn="440 FFF"/>
+
+    <!-- Add for Korea operator -->
+    <EccEntry Ecc="111" Category="6" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="113" Category="3" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="117" Category="18" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="118" Category="19" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="125" Category="9" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="112" Category="1" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="119" Category="4" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="911" Category="4" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="122" Category="8" Condition="1" Plmn="450 FFF"/>
+
+    <!-- Add for Vietnam due to AOSP eccdata will treat it as ecc -->
+    <EccEntry Ecc="113" Category="0" Condition="2" Plmn="452 FFF"/>
+    <EccEntry Ecc="114" Category="0" Condition="2" Plmn="452 FFF"/>
+    <EccEntry Ecc="115" Category="0" Condition="2" Plmn="452 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="2" Plmn="452 FFF"/>
+	
+    <!-- Add 999 for HongKong -->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="454 FFF"/>
+
+    <!-- Add for Cambodia/Seatel -->
+    <EccEntry Ecc="117" Category="1" Condition="0" Plmn="456 FFF"/>
+    <EccEntry Ecc="118" Category="3" Condition="0" Plmn="456 FFF"/>
+    <EccEntry Ecc="119" Category="2" Condition="0" Plmn="456 FFF"/>
+    <EccEntry Ecc="666" Category="2" Condition="0" Plmn="456 FFF"/>
+	
+    <!-- Add for Laos -->
+    <EccEntry Ecc="1190" Category="0" Condition="2" Plmn="457 FFF"/>
+    <EccEntry Ecc="1191" Category="0" Condition="0" Plmn="457 FFF"/>
+    <EccEntry Ecc="1195" Category="0" Condition="2" Plmn="457 FFF"/>
+    <EccEntry Ecc="1199" Category="0" Condition="2" Plmn="457 FFF"/>
+	
+    <!-- Add for CT 2/3G network -->
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="460 03"/>
+    <EccEntry Ecc="119" Category="4" Condition="1" Plmn="460 03"/>
+    <EccEntry Ecc="120" Category="2" Condition="1" Plmn="460 03"/>
+    <EccEntry Ecc="122" Category="8" Condition="1" Plmn="460 03"/>
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="460 03"/>
+
+    <!-- China CTA emergency numbers for GSM operators -->
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="460 FFF"/>
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn="460 FFF"/>
+    <EccEntry Ecc="120" Category="0" Condition="2" Plmn="460 FFF"/>
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn="460 FFF"/>
+    <!-- Support dial 999 under G+N/A case because CT network don't support
+         dial 999 without no CT SIM
+    -->
+    <EccEntry Ecc="999" Category="0" Condition="2" Plmn="460 FFF"/>
+
+    <!-- Add for Taiwan FET operator (466 01) -->
+    <EccEntry Ecc="110" Category="1" Condition="2" Plmn="466 01"/>
+    <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 01"/>
+    <EccEntry Ecc="119" Category="4" Condition="2" Plmn="466 01"/>
+    <EccEntry Ecc="911" Category="2" Condition="1" Plmn="466 01"/>
+
+    <!-- Add for Taiwan APTG operator (466 05) -->
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="466 05"/>
+    <EccEntry Ecc="112" Category="4" Condition="1" Plmn="466 05"/>
+    <EccEntry Ecc="119" Category="2" Condition="1" Plmn="466 05"/>
+
+    <!-- Add for Taiwan T star operator (466 89) -->
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="466 89"/>
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn="466 89"/>
+
+    <!-- Add for Taiwan CHT operator (466 92) -->
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="466 92"/>
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn="466 92"/>
+
+    <!-- Add for Taiwan TWM operator (466 93/97/99) -->
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="466 93"/>
+    <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 93"/>
+    <EccEntry Ecc="119" Category="4" Condition="1" Plmn="466 93"/>
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="466 97"/>
+    <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 97"/>
+    <EccEntry Ecc="119" Category="4" Condition="1" Plmn="466 97"/>
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="466 99"/>
+    <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 99"/>
+    <EccEntry Ecc="119" Category="4" Condition="1" Plmn="466 99"/>
+
+    <!-- Add for Bangladesh -->
+    <EccEntry Ecc="999" Category="0" Condition="2" Plmn="470 FFF"/>
+	
+    <!-- Add for Malaysis Digi operator -->
+    <EccEntry Ecc="999" Category="0" Condition="0" Plmn="502 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="502 FFF"/>
+    <EccEntry Ecc="994" Category="0" Condition="2" Plmn="502 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="2" Plmn="502 FFF"/>	
+    <EccEntry Ecc="991" Category="0" Condition="0" Plmn="502 FFF"/>
+	
+    <!-- Fix NO SIM ECC call end delay issue -->
+    <EccEntry Ecc="000" Category="31" Condition="1" Plmn="505 01"/>
+    <!-- Add for All Australia operators -->
+    <EccEntry Ecc="000" Category="0" Condition="1" Plmn="505 FFF"/>
+
+    <!-- Add for Indonesia -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="510 FFF"/>
+    <EccEntry Ecc="113" Category="3" Condition="0" Plmn="510 FFF"/>
+    <EccEntry Ecc="110" Category="1" Condition="2" Plmn="510 FFF"/>
+    <EccEntry Ecc="118" Category="2" Condition="0" Plmn="510 FFF"/>
+    <EccEntry Ecc="119" Category="0" Condition="0" Plmn="510 FFF"/>
+    <EccEntry Ecc="129" Category="0" Condition="2" Plmn="510 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="510 FFF"/>
+    <EccEntry Ecc="115" Category="0" Condition="2" Plmn="510 FFF"/>
+    <EccEntry Ecc="117" Category="0" Condition="0" Plmn="510 FFF"/>
+
+    <!-- Add for East Timor -->
+    <EccEntry Ecc="112" Category="1" Condition="2" Plmn="514 FFF"/>
+    <EccEntry Ecc="115" Category="3" Condition="2" Plmn="514 FFF"/>
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="514 FFF"/>
+	
+    <!-- Add for Philippines -->
+    <EccEntry Ecc="911" Category="0" Condition="2" Plmn="515 FFF"/>
+    <EccEntry Ecc="117" Category="1" Condition="2" Plmn="515 FFF"/>
+    <EccEntry Ecc="8888" Category="0" Condition="2" Plmn="515 FFF"/>
+	
+    <!-- Add for Thailand -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="520 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="2" Plmn="520 FFF"/>
+    <EccEntry Ecc="999" Category="0" Condition="2" Plmn="520 FFF"/>
+    <EccEntry Ecc="191" Category="0" Condition="2" Plmn="520 FFF"/>
+    <EccEntry Ecc="199" Category="0" Condition="2" Plmn="520 FFF"/>
+
+    <!-- Add for Singapore -->
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="525 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="525 FFF"/>
+    <EccEntry Ecc="995" Category="0" Condition="2" Plmn="525 FFF"/>
+    <EccEntry Ecc="999" Category="1" Condition="2" Plmn="525 FFF"/>
+
+    <!-- Add for Brunei -->
+    <EccEntry Ecc="995" Category="3" Condition="2" Plmn="528 FFF"/>
+    <EccEntry Ecc="991" Category="2" Condition="2" Plmn="528 FFF"/>
+    <EccEntry Ecc="993" Category="1" Condition="2" Plmn="528 FFF"/>
+    <EccEntry Ecc="998" Category="0" Condition="2" Plmn="528 FFF"/>
+	
+    <!-- Add for Nauru -->
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="536 FFF"/>
+	
+    <!-- Add for Papua New Guinea -->
+    <EccEntry Ecc="000" Category="0" Condition="0" Plmn="537 FFF"/>
+    <EccEntry Ecc="111" Category="0" Condition="0" Plmn="537 FFF"/>
+    <EccEntry Ecc="110" Category="0" Condition="0" Plmn="537 FFF"/>
+
+    <!-- Add for Tonga -->
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="539 FFF"/>
+	
+    <!-- Add for Solomon -->
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="540 FFF"/>
+
+    <!-- Add for Fiji -->
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="542 FFF"/>
+    <EccEntry Ecc="917" Category="0" Condition="0" Plmn="542 FFF"/>
+	
+    <!-- Add for Kiribati -->
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="545 FFF"/>
+
+    <!-- Add for Micronesia -->
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="550 FFF"/>
+
+    <!-- Add for Micronesia -->
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="551 FFF"/>
+	
+    <!-- Add for Egypt -->
+    <EccEntry Ecc="911" Category="0" Condition="2" Plmn="602 FFF"/>
+    <EccEntry Ecc="123" Category="2" Condition="2" Plmn="602 FFF"/>
+	<EccEntry Ecc="180" Category="3" Condition="2" Plmn="602 FFF"/>
+    <EccEntry Ecc="122" Category="1" Condition="2" Plmn="602 FFF"/>
+    <EccEntry Ecc="121" Category="0" Condition="2" Plmn="602 FFF"/>
+	<EccEntry Ecc="128" Category="1" Condition="2" Plmn="602 FFF"/>
+
+    <!-- Add for Algeria -->
+    <EccEntry Ecc="17" Category="1" Condition="2" Plmn="603 FFF"/>
+    <EccEntry Ecc="14" Category="0" Condition="2" Plmn="603 FFF"/>
+	<EccEntry Ecc="1055" Category="0" Condition="2" Plmn="603 FFF"/>
+    <EccEntry Ecc="1021" Category="0" Condition="2" Plmn="603 FFF"/>
+    <EccEntry Ecc="3033" Category="0" Condition="2" Plmn="603 FFF"/>
+	<EccEntry Ecc="1548" Category="1" Condition="2" Plmn="603 FFF"/>
+	
+    <!-- Add for Morocco -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="604 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="604 FFF"/>
+	<EccEntry Ecc="19" Category="1" Condition="2" Plmn="604 FFF"/>
+    <EccEntry Ecc="190" Category="1" Condition="2" Plmn="604 FFF"/>
+    <EccEntry Ecc="15" Category="2" Condition="2" Plmn="604 FFF"/>
+	<EccEntry Ecc="150" Category="3" Condition="2" Plmn="604 FFF"/>
+	<EccEntry Ecc="177" Category="0" Condition="2" Plmn="604 FFF"/>
+
+    <!-- Add for Tunisia -->
+    <EccEntry Ecc="190" Category="0" Condition="0" Plmn="605 FFF"/>
+    <EccEntry Ecc="197" Category="1" Condition="0" Plmn="605 FFF"/>
+	<EccEntry Ecc="198" Category="1" Condition="2" Plmn="605 FFF"/>
+    <EccEntry Ecc="193" Category="1" Condition="2" Plmn="605 FFF"/>
+
+    <!-- Add for Gambia -->
+    <EccEntry Ecc="116" Category="0" Condition="0" Plmn="607 FFF"/>
+    <EccEntry Ecc="117" Category="1" Condition="0" Plmn="607 FFF"/>
+	<EccEntry Ecc="118" Category="3" Condition="0" Plmn="607 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="607 FFF"/>
+	
+    <!-- Add for Burkina Faso -->
+    <EccEntry Ecc="17" Category="0" Condition="2" Plmn="608 FFF"/>
+    <EccEntry Ecc="18" Category="1" Condition="2" Plmn="608 FFF"/>
+
+    <!-- Add for Mauritania -->
+    <EccEntry Ecc="116" Category="0" Condition="2" Plmn="609 FFF"/>
+    <EccEntry Ecc="117" Category="1" Condition="2" Plmn="609 FFF"/>
+	<EccEntry Ecc="118" Category="3" Condition="2" Plmn="609 FFF"/>
+
+    <!-- Add for Mali -->
+    <EccEntry Ecc="17" Category="0" Condition="2" Plmn="610 FFF"/>
+    <EccEntry Ecc="18" Category="0" Condition="2" Plmn="610 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="610 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="610 FFF"/>
+    <EccEntry Ecc="80001114" Category="0" Condition="2" Plmn="610 FFF"/>
+    <EccEntry Ecc="80001115" Category="1" Condition="2" Plmn="610 FFF"/>
+    <EccEntry Ecc="80001201" Category="3" Condition="2" Plmn="610 FFF"/>
+	
+    <!-- Add for Cote d'Ivoire -->
+    <EccEntry Ecc="17" Category="0" Condition="2" Plmn="611 FFF"/>
+    <EccEntry Ecc="18" Category="0" Condition="2" Plmn="611 FFF"/>
+    <EccEntry Ecc="15" Category="0" Condition="2" Plmn="611 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="611 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="611 FFF"/>
+    <EccEntry Ecc="999" Category="0" Condition="0" Plmn="611 FFF"/>
+	
+    <!-- Add for Cote d'Ivoire -->
+    <EccEntry Ecc="100" Category="1" Condition="2" Plmn="612 FFF"/>
+    <EccEntry Ecc="111" Category="1" Condition="2" Plmn="612 FFF"/>
+    <EccEntry Ecc="170" Category="1" Condition="2" Plmn="612 FFF"/>
+    <EccEntry Ecc="180" Category="0" Condition="2" Plmn="612 FFF"/>
+    <EccEntry Ecc="185" Category="0" Condition="2" Plmn="612 FFF"/>
+    <EccEntry Ecc="145" Category="0" Condition="2" Plmn="612 FFF"/>
+
+    <!-- Add for Burkina Faso -->
+    <EccEntry Ecc="16" Category="0" Condition="2" Plmn="613 FFF"/>
+    <EccEntry Ecc="17" Category="1" Condition="2" Plmn="613 FFF"/>
+    <EccEntry Ecc="18" Category="0" Condition="2" Plmn="613 FFF"/>
+
+    <!-- Add for Niger -->
+    <EccEntry Ecc="17" Category="0" Condition="2" Plmn="614 FFF"/>
+    <EccEntry Ecc="18" Category="0" Condition="2" Plmn="614 FFF"/>
+    <EccEntry Ecc="15" Category="0" Condition="2" Plmn="614 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="614 FFF"/>
+    <EccEntry Ecc="999" Category="0" Condition="0" Plmn="614 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="614 FFF"/>
+	
+    <!-- Add for Ghana -->
+    <EccEntry Ecc="117" Category="1" Condition="2" Plmn="615 FFF"/>
+    <EccEntry Ecc="118" Category="3" Condition="2" Plmn="615 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="615 FFF"/>
+
+    <!-- Add for Ghana -->
+    <EccEntry Ecc="116" Category="1" Condition="2" Plmn="616 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="616 FFF"/>
+    <EccEntry Ecc="118" Category="3" Condition="2" Plmn="616 FFF"/>
+    <EccEntry Ecc="117" Category="1" Condition="2" Plmn="616 FFF"/>
+
+    <!-- Add for Mauritius -->
+    <EccEntry Ecc="999" Category="1" Condition="0" Plmn="617 FFF"/>
+    <EccEntry Ecc="112" Category="1" Condition="0" Plmn="617 FFF"/>
+    <EccEntry Ecc="115" Category="3" Condition="0" Plmn="617 FFF"/>
+    <EccEntry Ecc="114" Category="0" Condition="2" Plmn="617 FFF"/>
+    <EccEntry Ecc="113" Category="0" Condition="2" Plmn="617 FFF"/>
+	
+    <!-- Add for Mauritania -->
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="618 FFF"/>
+    <EccEntry Ecc="999" Category="1" Condition="0" Plmn="618 FFF"/>	
+
+    <!-- Add for Sierra Leone -->
+    <EccEntry Ecc="911" Category="2" Condition="0" Plmn="619 FFF"/>
+    <EccEntry Ecc="999" Category="3" Condition="0" Plmn="619 FFF"/>
+    <EccEntry Ecc="117" Category="2" Condition="2" Plmn="619 FFF"/>
+    <EccEntry Ecc="112" Category="1" Condition="0" Plmn="619 FFF"/>
+
+	
+    <!-- Add for Ghana -->
+    <EccEntry Ecc="191" Category="1" Condition="2" Plmn="620 FFF"/>
+    <EccEntry Ecc="192" Category="1" Condition="2" Plmn="620 FFF"/>
+    <EccEntry Ecc="193" Category="1" Condition="2" Plmn="620 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="620 FFF"/>
+    <EccEntry Ecc="999" Category="0" Condition="0" Plmn="620 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="620 FFF"/>
+
+    <!-- Add for Nigeria -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="621 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="621 FFF"/>
+    <EccEntry Ecc="999" Category="0" Condition="0" Plmn="621 FFF"/>
+    <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 FFF"/>
+
+    <!-- Add for Cameroon -->
+    <EccEntry Ecc="113" Category="0" Condition="2" Plmn="624 FFF"/>
+    <EccEntry Ecc="117" Category="1" Condition="2" Plmn="624 FFF"/>
+    <EccEntry Ecc="118" Category="3" Condition="2" Plmn="624 FFF"/>
+    <EccEntry Ecc="119" Category="2" Condition="2" Plmn="624 FFF"/>
+    <EccEntry Ecc="1510" Category="0" Condition="2" Plmn="624 FFF"/>
+	
+    <!-- Add for Chad -->
+    <EccEntry Ecc="1010" Category="0" Condition="2" Plmn="622 FFF"/>
+    <EccEntry Ecc="18" Category="3" Condition="2" Plmn="622 FFF"/>
+    <EccEntry Ecc="2020" Category="1" Condition="2" Plmn="622 FFF"/>
+    <EccEntry Ecc="1313" Category="0" Condition="2" Plmn="622 FFF"/>
+
+    <!-- Add for Chad -->
+    <EccEntry Ecc="114" Category="0" Condition="2" Plmn="623 FFF"/>
+    <EccEntry Ecc="117" Category="1" Condition="2" Plmn="623 FFF"/>
+    <EccEntry Ecc="118" Category="3" Condition="2" Plmn="623 FFF"/>
+    <EccEntry Ecc="1320" Category="0" Condition="2" Plmn="623 FFF"/>
+    <EccEntry Ecc="1325" Category="0" Condition="2" Plmn="623 FFF"/>
+    <EccEntry Ecc="4040" Category="0" Condition="2" Plmn="623 FFF"/>
+    <EccEntry Ecc="1212" Category="0" Condition="2" Plmn="623 FFF"/>
+    <EccEntry Ecc="1330" Category="0" Condition="2" Plmn="623 FFF"/>
+	
+    <!-- Add for Gabon -->
+    <EccEntry Ecc="1333" Category="0" Condition="2" Plmn="628 FFF"/>
+    <EccEntry Ecc="1324" Category="0" Condition="2" Plmn="628 FFF"/>
+    <EccEntry Ecc="1300" Category="2" Condition="0" Plmn="628 FFF"/>
+    <EccEntry Ecc="177" Category="1" Condition="2" Plmn="628 FFF"/>
+    <EccEntry Ecc="18" Category="3" Condition="0" Plmn="628 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="628 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="628 FFF"/>
+    <EccEntry Ecc="1401" Category="0" Condition="0" Plmn="628 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="628 FFF"/>
+    <EccEntry Ecc="1401" Category="0" Condition="0" Plmn="628 FFF"/>
+    <EccEntry Ecc="1410" Category="0" Condition="0" Plmn="628 FFF"/>
+	<EccEntry Ecc="1442" Category="0" Condition="0" Plmn="628 FFF"/>
+	<EccEntry Ecc="1420" Category="0" Condition="0" Plmn="628 FFF"/>
+	<EccEntry Ecc="1488" Category="0" Condition="0" Plmn="628 FFF"/>
+	<EccEntry Ecc="8586" Category="0" Condition="0" Plmn="628 FFF"/>
+	<EccEntry Ecc="1314" Category="0" Condition="0" Plmn="628 FFF"/>
+	<EccEntry Ecc="1404" Category="0" Condition="0" Plmn="628 FFF"/>
+	<EccEntry Ecc="8510" Category="0" Condition="2" Plmn="628 FFF"/>
+	<EccEntry Ecc="1432" Category="0" Condition="0" Plmn="628 FFF"/>
+	<EccEntry Ecc="1720" Category="0" Condition="2" Plmn="628 FFF"/>
+	<EccEntry Ecc="1722" Category="0" Condition="2" Plmn="628 FFF"/>
+	<EccEntry Ecc="12" Category="0" Condition="2" Plmn="628 FFF"/>
+	<EccEntry Ecc="1455" Category="0" Condition="2" Plmn="628 FFF"/>
+	
+    <!-- Add for  Congo Brazzaville -->
+    <EccEntry Ecc="118" Category="1" Condition="0" Plmn="629 FFF"/>
+    <EccEntry Ecc="117" Category="3" Condition="0" Plmn="629 FFF"/>
+	
+    <!-- Add for  Congo -->
+    <EccEntry Ecc="112" Category="1" Condition="2" Plmn="630 FFF"/>
+    <EccEntry Ecc="911" Category="3" Condition="2" Plmn="630 FFF"/>
+
+	<!-- Add for Angola -->
+    <EccEntry Ecc="113" Category="0" Condition="2" Plmn="631 FFF"/>
+    <EccEntry Ecc="115" Category="0" Condition="2" Plmn="631 FFF"/>
+    <EccEntry Ecc="116" Category="0" Condition="2" Plmn="631 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="631 FFF"/>
+    <EccEntry Ecc="15020" Category="0" Condition="2" Plmn="631 FFF"/>
+    <EccEntry Ecc="121" Category="0" Condition="2" Plmn="631 FFF"/>
+    <EccEntry Ecc="120" Category="0" Condition="2" Plmn="631 FFF"/>
+    <EccEntry Ecc="111" Category="0" Condition="2" Plmn="631 FFF"/>
+	
+	<!-- Add for Guinea-Bissau -->
+    <EccEntry Ecc="1515" Category="0" Condition="2" Plmn="632 FFF"/>
+    <EccEntry Ecc="1313" Category="0" Condition="2" Plmn="632 FFF"/>
+    <EccEntry Ecc="1414" Category="0" Condition="2" Plmn="632 FFF"/>
+    <EccEntry Ecc="1212" Category="0" Condition="2" Plmn="632 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="632 FFF"/>
+    <EccEntry Ecc="117" Category="1" Condition="2" Plmn="632 FFF"/>
+    <EccEntry Ecc="118" Category="3" Condition="2" Plmn="632 FFF"/>
+    <EccEntry Ecc="119" Category="2" Condition="2" Plmn="632 FFF"/>
+	
+    <!-- Add for Rwanda -->
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="635 FFF"/>
+    <EccEntry Ecc="999" Category="0" Condition="2" Plmn="635 FFF"/>
+    <EccEntry Ecc="333" Category="2" Condition="2" Plmn="635 FFF"/>
+    <EccEntry Ecc="777" Category="1" Condition="2" Plmn="635 FFF"/>
+	
+    <!-- Add for Rwanda -->
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="635 FFF"/>
+    <EccEntry Ecc="113" Category="0" Condition="2" Plmn="635 FFF"/>
+    <EccEntry Ecc="997" Category="0" Condition="2" Plmn="635 FFF"/>
+    <EccEntry Ecc="3512" Category="0" Condition="2" Plmn="635 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="635 FFF"/>
+    <EccEntry Ecc="116" Category="0" Condition="2" Plmn="635 FFF"/>
+	<EccEntry Ecc="3511" Category="0" Condition="2" Plmn="635 FFF"/>
+	<EccEntry Ecc="118" Category="0" Condition="2" Plmn="635 FFF"/>
+	<EccEntry Ecc="111" Category="3" Condition="2" Plmn="635 FFF"/>
+	<EccEntry Ecc="912" Category="2" Condition="2" Plmn="635 FFF"/>
+
+    <!-- Add for Ethiopia -->
+    <EccEntry Ecc="907" Category="1" Condition="2" Plmn="636 FFF"/>
+    <EccEntry Ecc="991" Category="3" Condition="2" Plmn="636 FFF"/>
+    <EccEntry Ecc="939" Category="2" Condition="2" Plmn="636 FFF"/>
+	
+    <!-- Add for Djibouti -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="638 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="638 FFF"/>
+    <EccEntry Ecc="999" Category="1" Condition="2" Plmn="638 FFF"/>
+    <EccEntry Ecc="17" Category="2" Condition="2" Plmn="638 FFF"/>
+    <EccEntry Ecc="18" Category="3" Condition="2" Plmn="638 FFF"/>
+	
+    <!-- Add for Kenya -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="639 FFF"/>
+    <EccEntry Ecc="999" Category="0" Condition="0" Plmn="639 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="639 FFF"/>
+    <EccEntry Ecc="000" Category="0" Condition="0" Plmn="639 FFF"/>
+    <EccEntry Ecc="08" Category="0" Condition="0" Plmn="639 FFF"/>
+    <EccEntry Ecc="118" Category="0" Condition="0" Plmn="639 FFF"/>
+	
+    <!-- Add for Tanzania -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="640 FFF"/>
+    <EccEntry Ecc="999" Category="0" Condition="0" Plmn="640 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="640 FFF"/>
+    <EccEntry Ecc="111" Category="1" Condition="3" Plmn="640 FFF"/>
+    <EccEntry Ecc="113" Category="0" Condition="3" Plmn="640 FFF"/>
+    <EccEntry Ecc="114" Category="3" Condition="3" Plmn="640 FFF"/>
+
+    <!-- Add for UGANDA -->
+    <EccEntry Ecc="999" Category="0" Condition="0" Plmn="641 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="641 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="641 FFF"/>
+
+    <!-- Add for Burundi -->
+    <EccEntry Ecc="111" Category="0" Condition="2" Plmn="642 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="642 FFF"/>
+    <EccEntry Ecc="113" Category="0" Condition="2" Plmn="642 FFF"/>
+    <EccEntry Ecc="114" Category="0" Condition="2" Plmn="642 FFF"/>
+    <EccEntry Ecc="115" Category="0" Condition="2" Plmn="642 FFF"/>
+    <EccEntry Ecc="116" Category="0" Condition="2" Plmn="642 FFF"/>
+    <EccEntry Ecc="117" Category="0" Condition="2" Plmn="642 FFF"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="642 FFF"/>
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn="642 FFF"/>
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="642 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="642 FFF"/>
+    <EccEntry Ecc="999" Category="0" Condition="0" Plmn="642 FFF"/>
+   
+    <!-- Add for Mozambique -->
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="643 FFF"/>
+    <EccEntry Ecc="119" Category="1" Condition="2" Plmn="643 FFF"/>
+    <EccEntry Ecc="198" Category="3" Condition="2" Plmn="643 FFF"/>
+
+    <!-- Add for Zambia -->
+    <EccEntry Ecc="116" Category="0" Condition="2" Plmn="645 FFF"/>
+    <EccEntry Ecc="933" Category="0" Condition="2" Plmn="645 FFF"/>
+    <EccEntry Ecc="983" Category="0" Condition="2" Plmn="645 FFF"/>
+    <EccEntry Ecc="991" Category="0" Condition="2" Plmn="645 FFF"/>
+    <EccEntry Ecc="992" Category="0" Condition="2" Plmn="645 FFF"/>
+    <EccEntry Ecc="993" Category="0" Condition="2" Plmn="645 FFF"/>
+    <EccEntry Ecc="995" Category="0" Condition="2" Plmn="645 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="645 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="645 FFF"/>
+    <EccEntry Ecc="909" Category="0" Condition="2" Plmn="645 FFF"/>
+
+    <!-- Add for Madagascar -->
+    <EccEntry Ecc="117" Category="0" Condition="2" Plmn="646 FFF"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="646 FFF"/>
+    <EccEntry Ecc="124" Category="0" Condition="2" Plmn="646 FFF"/>
+	
+    <!-- Add for Zimbabwe -->
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="648 FFF"/>
+    <EccEntry Ecc="993" Category="0" Condition="2" Plmn="648 FFF"/>
+    <EccEntry Ecc="994" Category="0" Condition="2" Plmn="648 FFF"/>
+    <EccEntry Ecc="242301853" Category="0" Condition="2" Plmn="648 FFF"/>
+    <EccEntry Ecc="995" Category="0" Condition="2" Plmn="648 FFF"/>
+    <EccEntry Ecc="772188" Category="0" Condition="2" Plmn="648 FFF"/>
+	
+    <!-- Add for Namibia -->	
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="649 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="649 FFF"/>
+    <EccEntry Ecc="10111" Category="0" Condition="2" Plmn="649 FFF"/>
+    <EccEntry Ecc="6110111" Category="1" Condition="2" Plmn="708 FFF"/>
+    <EccEntry Ecc="61211111" Category="3" Condition="2" Plmn="708 FFF"/>
+    <EccEntry Ecc="61230505" Category="2" Condition="2" Plmn="708 FFF"/>
+	
+    <!-- Add for Malawi -->
+    <EccEntry Ecc="990" Category="0" Condition="2" Plmn="650 FFF"/>
+    <EccEntry Ecc="116" Category="0" Condition="2" Plmn="650 FFF"/>
+    <EccEntry Ecc="911" Category="1" Condition="2" Plmn="650 FFF"/>
+    <EccEntry Ecc="997" Category="1" Condition="2" Plmn="650 FFF"/>
+    <EccEntry Ecc="998" Category="2" Condition="2" Plmn="650 FFF"/>
+    <EccEntry Ecc="999" Category="3" Condition="0" Plmn="650 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="650 FFF"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="650 FFF"/>
+
+    <!-- Add for Botswana -->
+    <EccEntry Ecc="997" Category="0" Condition="2" Plmn="652 FFF"/>
+    <EccEntry Ecc="998" Category="0" Condition="2" Plmn="652 FFF"/>
+    <EccEntry Ecc="999" Category="0" Condition="2" Plmn="652 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="652 FFF"/>
+	
+    <!-- Add for South Africa -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="655 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="655 FFF"/>
+    <EccEntry Ecc="10111" Category="1" Condition="2" Plmn="655 FFF"/>
+    <EccEntry Ecc="10177" Category="2" Condition="2" Plmn="655 FFF"/>
+
+    <!-- Add for South sudan -->
+    <EccEntry Ecc="777" Category="0" Condition="0" Plmn="659 FFF"/>
+	
+    <!-- Add for Guatemala -->
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="704 FFF"/>
+    <EccEntry Ecc="123" Category="0" Condition="2" Plmn="704 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="704 FFF"/>
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn="704 FFF"/>
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn="704 FFF"/>
+    <EccEntry Ecc="125" Category="0" Condition="2" Plmn="704 FFF"/>
+
+    <!-- Add for El Salvador -->
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="706 FFF"/>
+    <EccEntry Ecc="132" Category="0" Condition="2" Plmn="706 FFF"/>
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn="706 FFF"/>
+    <EccEntry Ecc="913" Category="3" Condition="2" Plmn="706 FFF"/>
+	
+    <!-- Add for Honduras -->
+    <EccEntry Ecc="911" Category="0" Condition="2" Plmn="708 FFF"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="708 FFF"/>
+	
+    <!-- Add for Nicaragua -->
+    <EccEntry Ecc="128" Category="0" Condition="2" Plmn="710 FFF"/>
+    <EccEntry Ecc="118" Category="1" Condition="2" Plmn="710 FFF"/>
+    <EccEntry Ecc="115" Category="3" Condition="2" Plmn="710 FFF"/>
+    <EccEntry Ecc="911" Category="1" Condition="0" Plmn="710 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="710 FFF"/>
+	
+    <!-- Add for Costa Rica -->
+    <EccEntry Ecc="1118" Category="3" Condition="2" Plmn="712 FFF"/>
+    <EccEntry Ecc="1117" Category="1" Condition="2" Plmn="712 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="712 FFF"/>
+	
+    <!-- Add for Panama -->
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="714 FFF"/>
+    <EccEntry Ecc="103" Category="3" Condition="2" Plmn="714 FFF"/>
+    <EccEntry Ecc="104" Category="1" Condition="2" Plmn="714 FFF"/>
+	
+	<!-- Add for Peru -->
+    <EccEntry Ecc="105" Category="1" Condition="2" Plmn="716 FFF"/>
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="716 FFF"/>
+    <EccEntry Ecc="115" Category="0" Condition="2" Plmn="716 FFF"/>
+    <EccEntry Ecc="116" Category="3" Condition="2" Plmn="716 FFF"/>
+	
+	<!-- Add for Argentina -->
+    <EccEntry Ecc="100" Category="0" Condition="2" Plmn="722 FFF"/>
+    <EccEntry Ecc="103" Category="0" Condition="2" Plmn="722 FFF"/>
+    <EccEntry Ecc="106" Category="0" Condition="2" Plmn="722 FFF"/>
+    <EccEntry Ecc="107" Category="0" Condition="2" Plmn="722 FFF"/>
+    <EccEntry Ecc="135" Category="0" Condition="2" Plmn="722 FFF"/>
+    <EccEntry Ecc="142" Category="0" Condition="2" Plmn="722 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="722 FFF"/>
+	
+	<!-- Add for Brazil -->
+    <EccEntry Ecc="190" Category="1" Condition="2" Plmn="724 FFF"/>
+    <EccEntry Ecc="192" Category="2" Condition="2" Plmn="724 FFF"/>
+    <EccEntry Ecc="193" Category="3" Condition="2" Plmn="724 FFF"/>
+    <EccEntry Ecc="199" Category="0" Condition="2" Plmn="724 FFF"/>
+
+    <!-- Add for Chile -->
+    <EccEntry Ecc="911" Category="3" Condition="0" Plmn="730 FFF"/>
+    <EccEntry Ecc="133" Category="1" Condition="0" Plmn="730 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="730 FFF"/>
+	
+    <!-- Add for Colombia operator -->
+    <EccEntry Ecc="119" Category="3" Condition="2" Plmn="732 FFF"/>
+    <EccEntry Ecc="112" Category="1" Condition="2" Plmn="732 FFF"/>
+    <EccEntry Ecc="123" Category="0" Condition="2" Plmn="732 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="2" Plmn="732 FFF"/>
+
+    <!-- Add for Venezuela -->
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn="734 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn="734 FFF"/>
+    <EccEntry Ecc="171" Category="0" Condition="2" Plmn="734 FFF"/>
+
+    <!-- Add for Venezuela -->
+    <EccEntry Ecc="110" Category="1" Condition="2" Plmn="736 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="2" Plmn="736 FFF"/>
+    <EccEntry Ecc="112" Category="0" Condition="2" Plmn="736 FFF"/>
+
+    <!-- Add for Guyana -->
+    <EccEntry Ecc="911" Category="1" Condition="0" Plmn="738 FFF"/>
+    <EccEntry Ecc="912" Category="3" Condition="2" Plmn="738 FFF"/>
+    <EccEntry Ecc="913" Category="2" Condition="2" Plmn="738 FFF"/>
+	
+    <!-- Add for Ecuador -->
+    <EccEntry Ecc="911" Category="3" Condition="0" Plmn="740 FFF"/>
+
+    <!-- Add for Venezuela -->
+    <EccEntry Ecc="911" Category="1" Condition="0" Plmn="744 FFF"/>
+    <EccEntry Ecc="132" Category="3" Condition="0" Plmn="744 FFF"/>
+    <EccEntry Ecc="141" Category="0" Condition="0" Plmn="744 FFF"/>
+	
+</EccTable>
