@@ -6,6 +6,7 @@ soong_namespace {
     imports: [
         "device/itel/P13001L",
         "hardware/mediatek",
+        "hardware/mediatek/libmtkperf_client",
     ],
 }
 
@@ -258,6 +259,96 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libJpgEncPipe",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libJpgEncPipe.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libjpeg-alpha_vendor",
+                "libion",
+                "libion_mtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libJpgEncPipe.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libjpeg-alpha_vendor",
+                "libion",
+                "libion_mtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libadpcmdec_mtk",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libadpcmdec_mtk.so",
+            ],
+            shared_libs: [
+                "libmtk_drvb",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libadpcmdec_mtk.so",
+            ],
+            shared_libs: [
+                "libmtk_drvb",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libaedv",
     owner: "itel",
     strip: {
@@ -422,45 +513,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhevce_sb.ca7.android",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libhevce_sb.ca7.android.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libvcodec_oal",
-                "libc",
-                "libm",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhevce_sb.ca7.android.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libvcodec_oal",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libion_mtk",
     owner: "itel",
     strip: {
@@ -586,6 +638,82 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libjpeg-alpha-oal_vendor",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libjpeg-alpha-oal_vendor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libjpeg-alpha-oal_vendor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libjpeg-alpha_vendor",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libjpeg-alpha_vendor.so",
+            ],
+            shared_libs: [
+                "libjpeg-alpha-oal_vendor",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libjpeg-alpha_vendor.so",
+            ],
+            shared_libs: [
+                "libjpeg-alpha-oal_vendor",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libladder",
     owner: "itel",
     strip: {
@@ -627,6 +755,49 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmp3dec_mtk",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmp3dec_mtk.so",
+            ],
+            shared_libs: [
+                "libmtk_drvb",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmp3dec_mtk.so",
+            ],
+            shared_libs: [
+                "libmtk_drvb",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmtkcutils",
     owner: "itel",
     strip: {
@@ -651,53 +822,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libmtkrillog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmtkperf_client_vendor",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmtkperf_client_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "vendor.mediatek.hardware.mtkpower@1.0",
-                "vendor.mediatek.hardware.mtkpower@1.1",
-                "vendor.mediatek.hardware.mtkpower@1.2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmtkperf_client_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "vendor.mediatek.hardware.mtkpower@1.0",
-                "vendor.mediatek.hardware.mtkpower@1.1",
-                "vendor.mediatek.hardware.mtkpower@1.2",
                 "libc++",
                 "libc",
                 "libm",
@@ -772,49 +896,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpowerhalwrap_vendor",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libpowerhalwrap_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libhidlbase",
-                "vendor.mediatek.hardware.mtkpower@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libpowerhalwrap_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libhidlbase",
-                "vendor.mediatek.hardware.mtkpower@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -1259,6 +1340,31 @@ cc_prebuilt_library_shared {
                 "libvcodec_oal",
                 "libc++",
                 "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhevce_sb.ca7.android",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libhevce_sb.ca7.android.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libvcodec_oal",
                 "libc",
                 "libm",
             ],
@@ -2153,39 +2259,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth@1.1-impl-mediatek",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth@1.0",
-                "android.hardware.bluetooth@1.1",
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.hardware.gnss-impl-mediatek",
     owner: "itel",
     strip: {
@@ -2255,39 +2328,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.thermal@2.0-impl",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.thermal@2.0-impl.so",
-            ],
-            shared_libs: [
-                "libc",
-                "liblog",
-                "libhardware",
-                "libbase",
-                "libcutils",
-                "libutils",
-                "libhidlbase",
-                "android.hardware.thermal@1.0",
-                "android.hardware.thermal@2.0",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "audio.primary.mediatek",
     owner: "itel",
     strip: {
@@ -2304,7 +2344,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libutils",
-                "libalsautils-v31",
+                "libalsautils",
                 "libhardware_legacy",
                 "libhardware",
                 "libaudioutils",
@@ -2356,6 +2396,31 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libnbaio_mono",
                 "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "awinic.audio.effect",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/awinic.audio.effect.so",
+            ],
+            shared_libs: [
+                "liblog",
                 "libc",
                 "libm",
                 "libdl",
@@ -2987,6 +3052,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so",
             ],
             shared_libs: [
+                "libshim_sensors",
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
@@ -3131,7 +3197,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "thermal_hal",
+    name: "vendor.mediatek.hardware.bluetooth.audio@2.1-impl",
     owner: "itel",
     strip: {
         none: true,
@@ -3139,12 +3205,22 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/hw/thermal_hal.so",
+                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so",
             ],
             shared_libs: [
-                "liblog",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1",
+                "libbase",
+                "libbluetooth_audio_session_mediatek",
                 "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "liblog",
+                "libutils",
                 "libhardware",
+                "android.hardware.audio@6.0",
+                "android.hardware.audio.common@6.0",
+                "android.hardware.audio.common@6.0-util",
+                "vendor.mediatek.hardware.audio@6.1",
                 "libc++",
                 "libc",
                 "libm",
@@ -3261,39 +3337,6 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.mms@1.5",
                 "vendor.mediatek.hardware.mms@1.6",
                 "libJpgEncPipe",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkpower@1.2-impl",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhardware",
-                "libhidlbase",
-                "libutils",
-                "libcutils",
-                "vendor.mediatek.hardware.mtkpower@1.0",
-                "vendor.mediatek.hardware.mtkpower@1.1",
-                "vendor.mediatek.hardware.mtkpower@1.2",
                 "libc++",
                 "libc",
                 "libm",
@@ -5297,60 +5340,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libJpgEncPipe",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libJpgEncPipe.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libjpeg-alpha_vendor",
-                "libion",
-                "libion_mtk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libMtkSpeechEnh",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libMtkSpeechEnh.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libOpenCL",
     owner: "itel",
     strip: {
@@ -5414,61 +5403,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "lib_iir",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/lib_iir.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "lib_speech_enh",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/lib_speech_enh.so",
-            ],
-            shared_libs: [
-                "libMtkSpeechEnh",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libaudioutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -5779,34 +5713,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudiocompensationfilterc",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudiocompensationfilterc.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libaudiocustparam_vendor",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libaudiocomponentengine_vendor",
     owner: "itel",
     strip: {
@@ -5825,36 +5731,6 @@ cc_prebuilt_library_shared {
                 "libblisrc32_vendor",
                 "libmtklimiter_vendor",
                 "libmtkshifter_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudiocomponentenginec",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudiocomponentenginec.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libblisrc32_vendor",
-                "libmtklimiter_vendor",
-                "libmtkshifter_vendor",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -5953,35 +5829,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudioloudc",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudioloudc.so",
-            ],
-            shared_libs: [
-                "libaudiocompensationfilterc",
-                "libbessound_hd_mtk_vendor",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libaudioprimarydevicehalifclient",
     owner: "itel",
     strip: {
@@ -6004,6 +5851,37 @@ cc_prebuilt_library_shared {
                 "android.hardware.audio.common@7.0-util",
                 "libmedia_helper",
                 "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiosmartpamtk",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libaudiosmartpamtk.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libnvram",
+                "libtinyalsa",
+                "libcrypto",
+                "libssl",
                 "libc++",
                 "libc",
                 "libm",
@@ -6061,34 +5939,6 @@ cc_prebuilt_library_shared {
                 "libc++",
                 "libc",
                 "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbessound_hd_mtk_vendor",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbessound_hd_mtk_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmtk_drvb",
-                "libutils",
-                "libm",
-                "libc++",
-                "libc",
                 "libdl",
             ],
         },
@@ -6853,6 +6703,177 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_alacdec",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_alacdec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common",
+                "libcodec2_vndk",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_mtk_c2store",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_apedec",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_apedec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common",
+                "libcodec2_vndk",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_mtk_c2store",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_imaadpcmdec",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common",
+                "libcodec2_vndk",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_mtk_c2store",
+                "libadpcmdec_mtk",
+                "libmtk_drvb",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_mp3dec",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_mp3dec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common",
+                "libcodec2_vndk",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_mtk_c2store",
+                "libmp3dec_mtk",
+                "libmtk_drvb",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_msadpcmdec",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common",
+                "libcodec2_vndk",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_mtk_c2store",
+                "libadpcmdec_mtk",
+                "libmtk_drvb",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcodec2_vpp_qt_plugin",
     owner: "itel",
     strip: {
@@ -7432,6 +7453,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhfmanagerwrapper",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libhfmanagerwrapper.so",
+            ],
+            shared_libs: [
+                "libhardware",
+                "libhfmanager",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libhwm",
     owner: "itel",
     strip: {
@@ -7557,57 +7604,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libdmabufheap",
                 "libgz_uree",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libjpeg-alpha-oal_vendor",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libjpeg-alpha-oal_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libjpeg-alpha_vendor",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libjpeg-alpha_vendor.so",
-            ],
-            shared_libs: [
-                "libjpeg-alpha-oal_vendor",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -8960,67 +8956,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libnxp_extamp_intf",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libnxp_extamp_intf.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libtinyalsa",
-                "liblog",
-                "libnvram",
-                "libcrypto",
-                "libssl",
-                "libfile_op",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libperfctl_vendor",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libperfctl_vendor.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libcutils",
-                "libui",
-                "libutils",
-                "libexpat",
-                "liblog",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libpl",
     owner: "itel",
     strip: {
@@ -9037,76 +8972,6 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpower_timer",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libpower_timer.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpowerhal",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libpowerhal.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libui",
-                "libutils",
-                "liblog",
-                "libexpat",
-                "libtinyxml2",
-                "libhidlbase",
-                "libhardware",
-                "vendor.mediatek.hardware.netdagent@1.0",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "libbluetooth_audio_session_mediatek",
-                "vendor.mediatek.hardware.mtkpower@1.0",
-                "vendor.mediatek.hardware.mtkpower@1.1",
-                "vendor.mediatek.hardware.mtkpower@1.2",
-                "libpower_timer",
-                "libged",
-                "libfmq",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -9469,6 +9334,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libtflite_mtk.so",
             ],
             shared_libs: [
+                "libbase_shim",
                 "liblog",
                 "libflatbuffers-cpp",
                 "libruy",
@@ -9777,34 +9643,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libapusys",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvpu5",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvpu5.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libcutils",
-                "libapu_mdw",
                 "libc++",
                 "libc",
                 "libm",
@@ -12089,6 +11927,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libaalservice.so",
             ],
             shared_libs: [
+                "libshim_sensors",
                 "libutils",
                 "libcutils",
                 "liblog",
@@ -13486,6 +13325,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libcam.utils.sensorprovider.so",
             ],
             shared_libs: [
+                "libshim_sensors",
                 "liblog",
                 "libmtkcam_ulog",
                 "libutils",
@@ -17313,6 +17153,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so",
             ],
             shared_libs: [
+                "libbase_shim",
                 "libcutils",
                 "liblog",
                 "libnativewindow",
@@ -19613,15 +19454,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.usb@1.2-service-mediatekv2.xml",
-    owner: "itel",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "gnss-mtk.xml",
     owner: "itel",
     src: "proprietary/vendor/etc/vintf/manifest/gnss-mtk.xml",
@@ -19831,6 +19663,32 @@ sh_binary {
 }
 
 cc_prebuilt_binary {
+    name: "conninfra_loader",
+    owner: "itel",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/conninfra_loader",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "epdg_wod",
     owner: "itel",
     target: {
@@ -19934,40 +19792,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.bluetooth@1.1-service-mediatek",
-    owner: "itel",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "android.hardware.bluetooth@1.0",
-                "android.hardware.bluetooth@1.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
     soc_specific: true,
 }
 
@@ -20082,6 +19906,7 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -20203,77 +20028,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.thermal@2.0-service.mtk",
-    owner: "itel",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.mtk",
-            ],
-            shared_libs: [
-                "libc",
-                "liblog",
-                "libhardware",
-                "libcutils",
-                "libbase",
-                "libhidlbase",
-                "libutils",
-                "android.hardware.thermal@2.0",
-                "android.hardware.thermal@1.0",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.usb@1.2-service-mediatekv2",
-    owner: "itel",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2",
-            ],
-            shared_libs: [
-                "libbase_shim",
-                "android.hardware.usb@1.0",
-                "android.hardware.usb@1.1",
-                "android.hardware.usb@1.2",
-                "android.hardware.usb@1.3",
-                "android.hardware.usb.gadget@1.0",
-                "android.hardware.usb.gadget@1.1",
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.graphics.allocator@4.0-service-mediatek.mt6789",
     owner: "itel",
     target: {
@@ -20360,7 +20114,6 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/mtkfusionrild",
             ],
             shared_libs: [
-                "libutils-v32",
                 "libmtkrillog",
                 "libmtkproperty",
                 "libmtkcutils",
@@ -20523,44 +20276,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vendor.mediatek.hardware.mtkpower@1.0-service",
-    owner: "itel",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "libhidlbase",
-                "vendor.mediatek.hardware.mtkpower@1.0",
-                "vendor.mediatek.hardware.mtkpower@1.1",
-                "vendor.mediatek.hardware.mtkpower@1.2",
-                "android.hardware.power-service-mediatek",
-                "libbase",
-                "libbinder_ndk",
-                "android.hardware.power-V2-ndk",
-                "libpower_timer",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "vendor.mediatek.hardware.nvram@1.1-service",
     owner: "itel",
     target: {
@@ -20660,14 +20375,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-sh_binary {
-    name: "init.insmod",
-    owner: "itel",
-    src: "proprietary/vendor/bin/init.insmod.sh",
-    filename: "init.insmod.sh",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "ipsec_mon",
     owner: "itel",
@@ -20739,6 +20446,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mnld",
             ],
             shared_libs: [
+                "libshim_sensors",
                 "libmnl",
                 "libcurl",
                 "libcutils",
@@ -20768,37 +20476,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "v3avpud.mt6789",
-    owner: "itel",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/mt6789/v3avpud.mt6789",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libvpudv3a_vcodec",
-                "libvcodec_utility_v3a",
-                "liblog",
-                "libion",
-                "libaedv",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "mt6789",
     soc_specific: true,
 }
 
@@ -21002,6 +20679,36 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "v3avpud",
+    owner: "itel",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/v3avpud",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libvpudv3a_vcodec",
+                "libvcodec_utility_v3a",
+                "liblog",
+                "libion",
+                "libaedv",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
     strip: {
         none: true,
     },
@@ -21333,13 +21040,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "bin/hw/camerahalserver",
     symlink_target: "/vendor/bin/hw/mt6789/camerahalserver",
-}
-
-install_symlink {
-    name: "vendor_bin_v3avpud",
-    soc_specific: true,
-    installed_location: "bin/v3avpud",
-    symlink_target: "/vendor/bin/mt6789/v3avpud.mt6789",
 }
 
 install_symlink {

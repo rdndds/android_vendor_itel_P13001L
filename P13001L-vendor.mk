@@ -80,18 +80,12 @@ PRODUCT_COPY_FILES += \
     vendor/itel/P13001L/proprietary/vendor/app/t6/data/E62563B4905C52822EADA8E32E5180D6/6B6579626F785F6372797074:$(TARGET_COPY_OUT_VENDOR)/app/t6/data/E62563B4905C52822EADA8E32E5180D6/6B6579626F785F6372797074 \
     vendor/itel/P13001L/proprietary/vendor/app/t6/face1d41-2636-11e1-ad9e0002a5d6c51b.ta:$(TARGET_COPY_OUT_VENDOR)/app/t6/face1d41-2636-11e1-ad9e0002a5d6c51b.ta \
     vendor/itel/P13001L/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
-    vendor/itel/P13001L/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
+    vendor/itel/P13001L/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/armnn_app.config:$(TARGET_COPY_OUT_VENDOR)/etc/armnn_app.config \
-    vendor/itel/P13001L/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
-    vendor/itel/P13001L/proprietary/vendor/etc/audio_em.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_em.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/audio_param/BtInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_AudioParam.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/audio_param/BtInfo_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_ParamUnitDesc.xml \
-    vendor/itel/P13001L/proprietary/vendor/etc/audio_param/CRSVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVolUI_AudioParam.xml \
-    vendor/itel/P13001L/proprietary/vendor/etc/audio_param/CRSVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVolUI_ParamUnitDesc.xml \
-    vendor/itel/P13001L/proprietary/vendor/etc/audio_param/CRSVol_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVol_AudioParam.xml \
-    vendor/itel/P13001L/proprietary/vendor/etc/audio_param/CRSVol_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVol_ParamUnitDesc.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/audio_param/HpImpedance_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/HpImpedance_AudioParam.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/audio_param/HpImpedance_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/HpImpedance_ParamUnitDesc.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/audio_param/MicInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/MicInfo_AudioParam.xml \
@@ -197,8 +191,6 @@ PRODUCT_COPY_FILES += \
     vendor/itel/P13001L/proprietary/vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
-    vendor/itel/P13001L/proprietary/vendor/etc/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml \
-    vendor/itel/P13001L/proprietary/vendor/etc/aurisys_config_rv.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_rv.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/ecc_list_OP02.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP02.xml \
@@ -209,7 +201,6 @@ PRODUCT_COPY_FILES += \
     vendor/itel/P13001L/proprietary/vendor/etc/ecc_list_OP20.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP20.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/ecc_list_OP236.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP236.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
-    vendor/itel/P13001L/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
     vendor/itel/P13001L/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
@@ -223,7 +214,6 @@ PRODUCT_COPY_FILES += \
     vendor/itel/P13001L/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
@@ -231,30 +221,18 @@ PRODUCT_COPY_FILES += \
     vendor/itel/P13001L/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/android.hardware.security.keymint-service.trustkernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.trustkernel.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/hw/init.aee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.aee.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/hw/init.connectivity.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.connectivity.common.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/hw/init.connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.connectivity.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/hw/init.modem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.modem.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/hw/init.mtkgki.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mtkgki.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/hw/init.project.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.project.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/hw/init.sensor_2_0.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sensor_2_0.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/hw/init_connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init_connectivity.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/init.bip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/init.bip_ap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip_ap.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/init.cccifsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccifsd.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/init.fpsgo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fpsgo.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/init.thermal_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_core.rc \
@@ -265,8 +243,6 @@ PRODUCT_COPY_FILES += \
     vendor/itel/P13001L/proprietary/vendor/etc/init/init.volte_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_ua.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/init.wfca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wfca.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/init.wod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wod.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
@@ -281,185 +257,18 @@ PRODUCT_COPY_FILES += \
     vendor/itel/P13001L/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/itel/P13001L/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG2.crt \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG3.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG3.crt \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/Entrust.net_Certification_Authority_2048.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/Entrust.net_Certification_Authority_2048.cer \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/EntrustRootCertificationAuthorityG2_root.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/EntrustRootCertificationAuthorityG2_root.crt \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_PCA_G3_Root.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GeoTrust_PCA_G3_Root.der \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA.der \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA_G2_ECC.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA_G2_ECC.der \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GlobalSign_root_CA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GlobalSign_root_CA.crt \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/LibertyGlobalEnterprise-Root-CA-G1.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/LibertyGlobalEnterprise-Root-CA-G1.crt \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/Root-R3.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/Root-R3.cer \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/Root_CA_1003.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/Root_CA_1003.crt \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/USERTrustRSACertificationAuthority.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/USERTrustRSACertificationAuthority.crt \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G4.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G4.der \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G5.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G5.der \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/VeriSignUniversalRootCertification.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/VeriSignUniversalRootCertification.der \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/gold.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/gold.cer \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/thawte.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/thawte.der \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/ssl/openssl.cnf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ssl/openssl.cnf \
-    vendor/itel/P13001L/proprietary/vendor/etc/ipsec/strongswan.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/strongswan.conf \
     vendor/itel/P13001L/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
-    vendor/itel/P13001L/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/itel/P13001L/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/itel/P13001L/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/itel/P13001L/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
     vendor/itel/P13001L/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/01419da9.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/01419da9.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/04f60c28.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/04f60c28.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/0d69c7e1.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/0d69c7e1.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/10531352.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/10531352.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/111e6273.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/111e6273.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/12d55845.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/12d55845.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/1ae85e5e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1ae85e5e.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/1df5a75f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1df5a75f.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/1e1eab7c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1e1eab7c.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/1e8e7201.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1e8e7201.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/1eb37bdf.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1eb37bdf.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/1f58a078.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1f58a078.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/219d9499.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/219d9499.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/23f4c490.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/23f4c490.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/27af790d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/27af790d.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/2add47b6.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/2add47b6.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/2d9dafe4.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/2d9dafe4.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/2fa87019.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/2fa87019.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/302904dd.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/302904dd.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/304d27c3.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/304d27c3.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/31188b5e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/31188b5e.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/33ee480d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/33ee480d.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/343eb6cb.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/343eb6cb.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/35105088.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/35105088.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/399e7759.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/399e7759.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/3ad48a91.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3ad48a91.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/3c6676aa.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3c6676aa.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/3c860d51.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3c860d51.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/3c899c73.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3c899c73.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/3c9a4d3b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3c9a4d3b.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/3e7271e8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3e7271e8.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/40dc992e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/40dc992e.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/455f1b52.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/455f1b52.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/48a195d8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/48a195d8.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/4be590e0.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/4be590e0.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/5046c355.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5046c355.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/524d9b43.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/524d9b43.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/52b525c7.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/52b525c7.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/583d0756.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/583d0756.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/5a250ea7.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5a250ea7.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/5a3f0ff8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5a3f0ff8.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/5acf816d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5acf816d.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/5cf9d536.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5cf9d536.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/5f47b495.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5f47b495.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/60afe812.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/60afe812.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/6187b673.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/6187b673.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/63a2c897.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/63a2c897.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/69105f4f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/69105f4f.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/6b03dec0.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/6b03dec0.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/75680d2e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/75680d2e.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/76579174.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/76579174.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/7892ad52.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/7892ad52.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/7a7c655d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/7a7c655d.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/7a819ef2.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/7a819ef2.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/81b9768f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/81b9768f.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/82223c44.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/82223c44.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/83e9984f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/83e9984f.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/85cde254.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/85cde254.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/86212b19.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/86212b19.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/869fbf79.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/869fbf79.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/882de061.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/882de061.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/88950faa.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/88950faa.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/89c02a45.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/89c02a45.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/8d6437c3.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/8d6437c3.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/9282e51c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9282e51c.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/9339512a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9339512a.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/9479c8c3.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9479c8c3.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/9576d26b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9576d26b.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/9591a472.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9591a472.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/95aff9e3.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/95aff9e3.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/9685a493.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9685a493.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/985c1f52.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/985c1f52.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/9aef356c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9aef356c.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/9d6523ce.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9d6523ce.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/9f533518.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9f533518.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/a2c66da8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/a2c66da8.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/a3896b44.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/a3896b44.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/a7605362.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/a7605362.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/a81e292b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/a81e292b.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/a9d40e02.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/a9d40e02.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/ab5346f4.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/ab5346f4.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/ab59055e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/ab59055e.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/aeb67534.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/aeb67534.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/b0ed035a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b0ed035a.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/b0f3e76e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b0f3e76e.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/b3fb433b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b3fb433b.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/b74d2bd5.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b74d2bd5.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/b7db1890.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b7db1890.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/b872f2b4.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b872f2b4.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/b936d1c6.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b936d1c6.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/bc3f2570.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/bc3f2570.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/bd43e1dd.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/bd43e1dd.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/bdacca6f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/bdacca6f.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/bf64f35b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/bf64f35b.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/c491639e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/c491639e.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/c51c224c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/c51c224c.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/c559d742.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/c559d742.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/c90bc37d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/c90bc37d.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/cb1c3204.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/cb1c3204.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/ccc52f49.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/ccc52f49.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/cf701eeb.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/cf701eeb.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/d06393bb.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d06393bb.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/d16a5865.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d16a5865.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/d18e9066.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d18e9066.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/d39b0a2c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d39b0a2c.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/d41b5e2a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d41b5e2a.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/d4c339cb.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d4c339cb.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/d59297b8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d59297b8.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/d7746a63.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d7746a63.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/da7377f6.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/da7377f6.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/dbc54cab.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/dbc54cab.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/dbff3a01.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/dbff3a01.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/dc99f41e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/dc99f41e.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/dfc0fe80.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/dfc0fe80.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/e442e424.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/e442e424.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/e48193cf.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/e48193cf.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/e8651083.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/e8651083.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/ed39abd0.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/ed39abd0.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/edcbddb5.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/edcbddb5.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/f013ecaf.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/f013ecaf.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/f0cd152c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/f0cd152c.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/f459871d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/f459871d.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/fb5fa911.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/fb5fa911.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/fd08c599.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/fd08c599.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts/fde84897.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/fde84897.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/111e6273.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/111e6273.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/3ad48a91.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/3ad48a91.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/7651b327.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/7651b327.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/c542733d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/c542733d.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/f336e3d1.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/f336e3d1.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/lab/18dc3a8d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/18dc3a8d.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/lab/1bc5ca0c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/1bc5ca0c.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/lab/1bc5ca0c.1:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/1bc5ca0c.1 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/lab/2cbfcc3a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/2cbfcc3a.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/lab/35ef1c14.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/35ef1c14.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/lab/399e7759.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/399e7759.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/lab/586933d9.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/586933d9.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/lab/6146415b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/6146415b.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/lab/66272d0d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/66272d0d.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/lab/6f1dbe5e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/6f1dbe5e.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/lab/b5805141.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/b5805141.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/lab/b805b58a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/b805b58a.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/lab/ed7b215e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/ed7b215e.0 \
-    vendor/itel/P13001L/proprietary/vendor/etc/security/cacerts_supl/lab/ef4b31e6.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/ef4b31e6.0 \
     vendor/itel/P13001L/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/itel/P13001L/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
+    vendor/itel/P13001L/proprietary/vendor/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
     vendor/itel/P13001L/proprietary/vendor/etc/thermal/disable_skin_control.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_skin_control.conf \
     vendor/itel/P13001L/proprietary/vendor/etc/thermal/disable_thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_thermal.conf \
     vendor/itel/P13001L/proprietary/vendor/etc/thermal/disable_thermal_temp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_thermal_temp.conf \
@@ -469,8 +278,6 @@ PRODUCT_COPY_FILES += \
     vendor/itel/P13001L/proprietary/vendor/etc/thermal/thermal_policy_00.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_00.conf \
     vendor/itel/P13001L/proprietary/vendor/etc/thermal/thermal_policy_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_02.conf \
     vendor/itel/P13001L/proprietary/vendor/etc/thermal/thermal_policy_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_08.conf \
-    vendor/itel/P13001L/proprietary/vendor/etc/usb_audio_accessory_only_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_accessory_only_policy_configuration.xml \
-    vendor/itel/P13001L/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/itel/P13001L/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
@@ -483,6 +290,7 @@ PRODUCT_COPY_FILES += \
     vendor/itel/P13001L/proprietary/vendor/firmware/WMT_SOC.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC.cfg \
     vendor/itel/P13001L/proprietary/vendor/firmware/WMT_SOC_CO_CLK.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC_CO_CLK.cfg \
     vendor/itel/P13001L/proprietary/vendor/firmware/aw87xxx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_acf.bin \
+    vendor/itel/P13001L/proprietary/vendor/firmware/awinic_params.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic_params.bin \
     vendor/itel/P13001L/proprietary/vendor/firmware/fm_cust.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/fm_cust.cfg \
     vendor/itel/P13001L/proprietary/vendor/firmware/focaltech_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ts_fw.bin \
     vendor/itel/P13001L/proprietary/vendor/firmware/gt9886_cfg_6781v01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_cfg_6781v01.bin \
@@ -582,20 +390,22 @@ PRODUCT_PACKAGES += \
     VP9SecureVdecCA \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     libAVCSecureVencCA \
+    libJpgEncPipe \
+    libadpcmdec_mtk \
     libaedv \
     libbwc \
     libgz_gp_client \
     libgz_uree \
-    libhevce_sb.ca7.android \
     libion_mtk \
     libion_ulit \
     libipsec_ims_shr \
+    libjpeg-alpha-oal_vendor \
+    libjpeg-alpha_vendor \
     libladder \
+    libmp3dec_mtk \
     libmtkcutils \
-    libmtkperf_client_vendor \
     libmtkproperty \
     libmtkrillog \
-    libpowerhalwrap_vendor \
     libthha \
     libvcodec_oal \
     libvcodecdrv_header_stub \
@@ -609,6 +419,7 @@ PRODUCT_PACKAGES += \
     libh264dec_sd.ca7 \
     libh264dec_se.ca7 \
     libh264enc_sa.ca7 \
+    libhevce_sb.ca7.android \
     libmp4enc_sa.ca7 \
     libmp4enc_xa.ca7 \
     librcs_volte_core \
@@ -637,12 +448,11 @@ PRODUCT_PACKAGES += \
     gc5035f_mipi_raw_tuning \
     hi1333_mipi_raw_IdxMgr \
     hi1333_mipi_raw_tuning \
-    android.hardware.bluetooth@1.1-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
-    android.hardware.thermal@2.0-impl \
     audio.primary.mediatek \
     audio.r_submix.mediatek \
+    awinic.audio.effect \
     gatekeeper.trustkernel \
     gps.default \
     hwcomposer.mtk_common \
@@ -662,11 +472,10 @@ PRODUCT_PACKAGES += \
     vulkan.mali \
     sensors.mediatek.V2.0 \
     sound_trigger.primary.default \
-    thermal_hal \
+    vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
     vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
     vendor.mediatek.hardware.mms@1.6-impl \
-    vendor.mediatek.hardware.mtkpower@1.2-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     lbs_hidl_service-impl \
     libCamera_gc08a3mipiraw_E2EHDR_Preview \
@@ -749,13 +558,9 @@ PRODUCT_PACKAGES += \
     libCamera_s5k4hayxmipiraw_Scene_Preview_ZSD_Flash \
     libCamera_s5k4hayxmipiraw_Video_1080 \
     libCamera_s5k4hayxmipiraw_Video_4k \
-    libJpgEncPipe \
-    libMtkSpeechEnh \
     libOpenCL \
     libSQLiteModule_VER_ALL \
     libTEECommon \
-    lib_iir \
-    lib_speech_enh \
     libaal_key \
     libaal_mtk \
     libalsautils-v31 \
@@ -767,17 +572,14 @@ PRODUCT_PACKAGES += \
     libarmnn_ndk.mtk.vndk \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
-    libaudiocompensationfilterc \
     libaudiocomponentengine_vendor \
-    libaudiocomponentenginec \
     libaudiocustparam_vendor \
     libaudiodcrflt_vendor \
     libaudiofmtconv \
-    libaudioloudc \
     libaudioprimarydevicehalifclient \
+    libaudiosmartpamtk \
     libaudiotoolkit_vendor \
     libaurisysdemo \
-    libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
     libbluetooth_audio_session_mediatek \
     libbluetooth_mtk \
@@ -804,6 +606,11 @@ PRODUCT_PACKAGES += \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
+    libcodec2_soft_mtk_alacdec \
+    libcodec2_soft_mtk_apedec \
+    libcodec2_soft_mtk_imaadpcmdec \
+    libcodec2_soft_mtk_mp3dec \
+    libcodec2_soft_mtk_msadpcmdec \
     libcodec2_vpp_qt_plugin \
     libcodec2_vpp_rs_plugin \
     libcomposer_ext \
@@ -823,13 +630,12 @@ PRODUCT_PACKAGES += \
     libgwsd-ril \
     libheichal \
     libhfmanager \
+    libhfmanagerwrapper \
     libhwm \
     libifcutils_mtk \
     libimagebuffer_wrapper \
     libimgsensorca \
     libispcameraca \
-    libjpeg-alpha-oal_vendor \
-    libjpeg-alpha_vendor \
     libkphhelper \
     libkphproxy \
     libksensor \
@@ -877,11 +683,7 @@ PRODUCT_PACKAGES += \
     libnpagent_server \
     libnvram \
     libnvram_sec \
-    libnxp_extamp_intf \
-    libperfctl_vendor \
     libpl \
-    libpower_timer \
-    libpowerhal \
     libpqframework \
     libratconfig \
     libremosaic_wrapper \
@@ -906,7 +708,6 @@ PRODUCT_PACKAGES += \
     libvow_ap_test_hh \
     libvow_ap_test_nn \
     libvpu \
-    libvpu5 \
     libwifi-hal-mtk \
     libwifitest \
     libwpfa \
@@ -1210,7 +1011,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service.trustkernel.xml \
     android.hardware.security.secureclock-service.trustkernel.xml \
     android.hardware.security.sharedsecret-service.trustkernel.xml \
-    android.hardware.usb@1.2-service-mediatekv2.xml \
     gnss-mtk.xml \
     gnss@2.1-service.xml \
     lbs_hidl_service@1.0.xml \
@@ -1226,19 +1026,17 @@ PRODUCT_PACKAGES += \
     ccci_mdinit \
     ccci_rpcd \
     chipinfo \
+    conninfra_loader \
     epdg_wod \
     fuelgauged \
     fuelgauged_nvram \
     gsm0710muxd \
-    android.hardware.bluetooth@1.1-service-mediatek \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint-service.trustkernel \
-    android.hardware.thermal@2.0-service.mtk \
-    android.hardware.usb@1.2-service-mediatekv2 \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6789 \
     camerahalserver \
     mtkfusionrild \
@@ -1246,15 +1044,12 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service \
     vendor.mediatek.hardware.mmagent@1.1-service \
     vendor.mediatek.hardware.mms@1.6-service \
-    vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vtservice_hidl \
-    init.insmod \
     ipsec_mon \
     lbs_hidl_service \
     mnld \
-    v3avpud.mt6789 \
     mtk_agpsd \
     netdagent \
     nvram_daemon \
@@ -1262,6 +1057,7 @@ PRODUCT_PACKAGES += \
     tee_check_keybox \
     teed \
     thermal_core \
+    v3avpud \
     volte_clientapi_ua \
     volte_imcb \
     volte_imsm_93 \
@@ -1277,7 +1073,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor_bin_hw_android_hardware_graphics_allocator@4_0-service-mediatek \
     vendor_bin_hw_camerahalserver \
-    vendor_bin_v3avpud \
     vendor_lib_libmtk_drvb_so \
     vendor_lib_libvcodec_utility_so \
     vendor_lib_libvcodec_utility_v3a_so \
